@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catch me if you can</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div class="beg-for-location">
+        <div class="beg-for-location__text">please clear your location service settings and refresh this page</div>
+    </div>
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARkS-dsh-7IirtcQg3oSZEHudV6Uw9Iic&callback=initMap"></script>
+    <div class="players">
+        <h3>Available player icons</h3>
+        <img src="icon/0.png" alt="">
+        <img src="icon/1.png" alt="">
+        <img src="icon/2.png" alt="">
+        <img src="icon/3.png" alt="">
+        <img src="icon/4.png" alt="">
+    </div>
+    <div class="chat">
+            <form id="form" class="form">
+                <div>
+                    Nick:<br>
+                    <input type="text" id="nick">
+                </div>
+                <div>
+                    Message:<br>
+                    <input type="text" id="content">
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="messages" class="messages">
+            </div>
+        </div>
+</body>
+</html>

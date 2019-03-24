@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GraphicEditor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="controlPanel">
+
+        <label>Brightness</label>
+        <input type="range" id="brightness" min="-50" max="50" value="0" step="1">
+
+        <label>Contrast</label>
+        <input type="range" id="contrast" min="-50" max="50" value="0" step="1">
+
+        <label>Red</label>
+        <input type="range" id="red" min="-50" max="50" value="0" step="1">
+
+        <label>Green</label>
+        <input type="range" id="green" min="-50" max="50" value="0" step="1">
+
+        <label>Blue</label>
+        <input type="range" id="blue" min="-50" max="50" value="0" step="1">
+
+    </div>
+    
+    <section id="photo">
+        <div class="border"></div>
+        <input type="file" name="imageLoader" id="imageLoader">
+        <canvas id="canvas" width="1100" height="700"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

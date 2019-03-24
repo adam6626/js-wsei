@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>NotePocket</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h2>NotePocket</h2>
+        </header>
+    
+        <div class="button-container">
+            <button type="button" class="btn new-note-button" id="newNoteButton">New note</button>
+            <button type="button" class="btn clean-notes-button" id="cleanNotesButton">Clean</button>
+        </div>
+    
+        <div class="notes-container" id="notesContainer"></div>
+    </div>
+    <div id="addNoteContainer" class="addnote-container">
+        <div class="modal">
+            <div class="modal-header">
+                New note
+            </div>
+            <div class="modal-body">
+                <div class="input-container">
+                    Title
+                    <input type="text" id="title">
+                </div>
+                <div class="input-container">
+                    Description
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="input-container">
+                    Color
+                    <input type="color" id="color">
+                </div>
+                <div class="input-container">
+                    <input type="checkbox" id="attached"> Attached
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn addnote-button" id="addNoteButton">Add</button>
+                <button type="button" class="btn cancel-button" id="cancelButton">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

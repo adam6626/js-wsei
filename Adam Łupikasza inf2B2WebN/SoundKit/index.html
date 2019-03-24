@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drums</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="channel-container">
+            <div><input type="radio" name="channel" value="channel1" checked> Channel 1</div>
+            <div><input type="radio" name="channel" value="channel2"> Channel 2</div>
+            <div><input type="radio" name="channel" value="channel3"> Channel 3</div>
+            <div><input type="radio" name="channel" value="channel4"> Channel 4</div>
+        </div>
+        <div class="control-container">
+            <button id="rec">Record</button>
+            <button id="play">Play</button>
+        </div>
+        <div class="trigger-container">
+            <button class="trigger" value="boom">boom<br>a</button>
+            <button class="trigger" value="clap">clap<br>s</button>
+            <button class="trigger" value="hihat">hihat<br>d</button>
+            <button class="trigger" value="kick">kick<br>f</button>
+            <button class="trigger" value="openhat">openhat<br>g</button>
+            <button class="trigger" value="ride">ride<br>h</button>
+            <button class="trigger" value="snare">snare<br>j</button>
+            <button class="trigger" value="tom">tom<br>k</button>
+            <button class="trigger" value="tink">tink<br>l</button>
+        </div>
+    </div>
+    <div class="hide">
+        <audio src="sounds/boom.wav" controls id="boom"></audio>
+        <audio src="sounds/clap.wav" controls id="clap"></audio>
+        <audio src="sounds/hihat.wav" controls id="hihat"></audio>
+        <audio src="sounds/kick.wav" controls id="kick"></audio>
+        <audio src="sounds/openhat.wav" controls id="openhat"></audio>
+        <audio src="sounds/ride.wav" controls id="ride"></audio>
+        <audio src="sounds/snare.wav" controls id="snare"></audio>
+        <audio src="sounds/tom.wav" controls id="tom"></audio>
+        <audio src="sounds/tink.wav" controls id="tink"></audio>
+    </div>
+</body>
+</html>

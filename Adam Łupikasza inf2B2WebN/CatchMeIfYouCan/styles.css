@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+}
+#map {
+    height:400px;
+    width:100%;
+}
+.beg-for-location {
+    display: none; 
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+}
+.beg-for-location--visible {
+    display: flex;
+}
+.beg-for-location__text {
+    padding: 10;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.chat {
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: lightgray;
+    padding: 10px;
+}
+.message {
+    margin-top: 10px;
+    background-color: #a5a5a5;
+    padding: 10px;
+    border-radius: 2px;
+}
+.message__header {
+    display: flex;
+}
+.message__nick {
+    font-weight: bold;
+}
+.message__time {
+    margin-left: 5px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+.message__content {
+    margin-top: 5px;
+}
